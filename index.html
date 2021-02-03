@@ -10,7 +10,13 @@
     <h1>Zainab</h1>
     <div id="names-list"></div>
     <input type="text" id="sname" />
-    <button>Add</button>
+    <button onclick="addNames()">Add</button>
 </body>
 <!-- //ok lets commit this -->
-</html> s
+</html>
+<script>
+    function addNames() {
+        let sname = document.getElementById("sname").value
+        document.getElementById("names-list").innerHTML += `<li>${sname}</li>`
+    }
+</script>
